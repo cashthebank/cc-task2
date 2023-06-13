@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pangrampangram</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+          background-color:var(--primary-color);
+          color:var(--secondary-color);
+          font-family: ;
+         
+
+      }
+     
+     
+
+
+nav{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: 100px;
+       background-color: none;
+       position: relative;
+      }
+   nav ul{
+
+      display: flex;
+      justify-content: center;
+      padding: 30px 10%;
+      
+      
+   }
+   nav ul li{
+      list-style: none;
+      margin: 0 23px;
+      color:var(--secondary-color);
+   }
+   nav ul li a{
+        text-decoration: none;
+       color:var(--secondary-color);
+     }
+     nav ul li a:hover{
+       opacity: 0.3;
+       font-size: 1rem;
+     }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> PangramPangram⬤Foundry</div>
+            <ul>
+                <li> <a href="#">AllFonts</a></li>
+               <li> <a href="#">FontStarterPack</a></li>
+              <li> <a href="#">Cart<sup>0</sup></a></li>
+              <li> <img src="img/moon-solid-24.png"id="icon" ></li>
+              </ul>
+             
+                 </nav>
+    </header>
+
+
+    <section class = "container">
+      <div class = "slider-wrapper">
+        <div class = "slider">
+         <img  id ="slide-1"src="img/b.jpg" alt="try"> 
+         <img  id ="slide-2"src="img/w.jpg" alt="try"> 
+         <img  id ="slide-3"src="img/a.png" alt="try"> 
+         <img  id ="slide-4"src="img/d.png" alt="try"> 
+        </div>
+        <div class = "slider-nav">
+          <a href = "#slide-1"></a>
+          <a href = "#slide-2"></a>
+          <a href = "#slide-3"></a>
+          <a href = "#slide-4"></a>
+        </div>
+      </div>
+    </section>
+  
+
+
+      
+
+       <script>
+    var icon = document.getElementById("icon");
+    icon.onclick= function(){
+       document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")) 
+        {
+            icon.src = "img/sun-regular-24.png"
+        }
+        else{
+            icon.src = "img/moon-solid-24.png" 
+        }
+    }
+ </script>   
+       
+       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+       <script src="js/index.js"></script>
+    
+</body>
+</html>
